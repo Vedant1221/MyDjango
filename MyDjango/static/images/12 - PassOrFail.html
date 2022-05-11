@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result Program</title>
+    <script>
+        function calculate() {
+            var x;
+            x = parseInt(tb1. value);
+            if (x >= 45) {
+                document.getElementById("res").innerHTML = "Result: Pass";
+                document.getElementById('res').style.color = 'green';
+            }
+            else{
+                document.getElementById("res").innerHTML =  "Result: Fail";
+                document.getElementById('res').style.color = 'red';
+}                }
+
+        function msgAlert() {
+           var x;
+           x = parseInt(tb1.value)
+            if (x >= 45) {
+            alert(" Pass");
+            }
+            else{
+                alert("Fail")
+            }
+}       function TextBox() {
+            x = parseInt(tb1.value);
+            if (x >= 45) {
+            document.getElementById('tb2').value = 'Pass'
+            }
+            else{
+            document.getElementById('tb2').value = 'Fail'
+            }
+}
+    </script>
+
+</head>
+<body>
+    <h1>Result</h1>
+    <form name="f1" >
+        Enter the Value: <input type="text" size="15" id="tb1"><br><br>
+         <button type="button" id="b1"  onclick="msgAlert()">Alert</button>
+         <button type="button" id="b2"  onclick="TextBox()">Result in Textbox</button>
+         <button type="button" id="b3"  onclick="calculate()">Webpage</button><br><br>     
+         Result: <input type="text" size="25" id="tb2"><br>
+         <p id="res"> </p>
+    </form>
+</body>
+</html>

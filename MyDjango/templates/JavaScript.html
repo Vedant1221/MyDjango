@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% load static %}
+{% static "images" as baseUrl %}
+{% block content %}
+
+    <table border=1 width="100%">
+        <tr>
+            <td>
+                <p>
+                    <a href="{% static 'images\11 - JSvoting.html' %}"target="1">Pass or Fail?.</a>
+                </p>
+            </Td>
+            <td>
+                <p>
+                    <a href="{% static 'images\7 - JS - Simple Interest.html' %}"target="2">Voting</a>
+                </p>
+            </td>
+            <td>
+                <p>
+                    <a href="{% static 'images\5 - Timetable.html' %}" target="3">Timetable</a>
+                </p>
+            </td>
+            <td>
+                <p>
+                    <a href="{% static 'images\12 - PassOrFail.html' %}" target="4">Simple Interest</a>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <iframe src="" name="1" height="400px" width="100%"></iframe>
+            </td>
+            <td>
+                <iframe src="" name="2" height="400px" width="100%"></iframe>
+            </td>
+            <td>
+                <iframe src="" name = "3" height="400px" width="100%"></iframe>
+            </td>
+            <td>
+                <iframe src="" name = "4" height = "400px" width="100%"></iframe>
+            </td>
+        </tr>
+    </table>
+
+{% endblock %}
+ 

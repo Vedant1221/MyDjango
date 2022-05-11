@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Interest</title>
+    <script>
+        function Interest()
+        {
+            var x, y, z, a;
+            x = parseInt(f1.tb1.value)
+            y = parseInt(f1.tb2.value)
+            z = parseInt(f1.tb3.value)
+            a = x*y*z/100
+            document.getElementById('tb4').value = a
+        }
+    </script>
+</head>
+<body>
+    <form action="" id="f1">
+        Enter Principle <input type="text" id = "tb1"><br><br>
+        Enter Rate: <input type="text" id = "tb2"><br><br>
+        Enter Year: <input type="text" id = "tb3"><br><br>
+        <button type = "button" onclick="Interest()">Simple Interest</button><br><br>
+        Result <input type="text" id = "tb4">
+    </form>
+</body>
+</html>

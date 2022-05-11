@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% load static %}
+{% static "images" as baseUrl %}
+{% block content %}
+    <center>
+        <table>
+            <tr>
+                <td>
+                    <img src="{%static 'images\Welcome.jpeg' %}" alt="" height = "200" width = "300">
+                </td>
+                <td>
+                    Username: <input type="text" id="tbusername"><br><br>
+                    Password: <input type="text" id = "tbpassword"><br><br>
+                    <button type = "button" onclick = "">Sign In</button>
+                    <button type = "button" onclick = "">Sign Up</button>
+                </td>
+                <td>
+                    <img src= "{%static 'images\Hello.gif' %}" alt="" height = "200" width = "300">
+                </td>
+            </tr>
+        </table>
+    </center>
+
+{% endblock %}
+ 
